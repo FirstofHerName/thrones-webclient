@@ -1,0 +1,10 @@
+<h1>Create New Throne</h1>
+
+<%= form_tag "/thrones/#{throne[:id]}", method: :post do %>
+  <div>
+    Character: <input type="text" name="character">
+  </div>
+  <div>
+    House: <input type="text" name="house">
+  </div>
+  <input type="submit" name="Update">
